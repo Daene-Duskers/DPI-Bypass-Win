@@ -13,8 +13,10 @@
             <directory>./</directory>
             <excludes>
                 <exclude>target/**</exclude>
+                <exclude>.git/**</exclude>
                 <exclude>.github/**</exclude>
                 <exclude>.gitattributes</exclude>
+                <exclude>.gitignore</exclude>
                 <exclude>assembly.xml</exclude>
                 <exclude>pom.xml</exclude>
             </excludes>
