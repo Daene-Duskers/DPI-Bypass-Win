@@ -15,8 +15,7 @@
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <date.release>${maven.build.timestamp}</date.release>
-        <maven.build.timestamp.format>yyMMdd</maven.build.timestamp.format>
+        <release.version>250805-1630</release.version>
     </properties>
 
     <build>
@@ -32,7 +31,7 @@
                             <goal>single</goal>
                         </goals>
                         <configuration>
-                            <finalName>Zapret Win ${date.release}</finalName>
+                            <finalName>DPI Bypass Win ${release.version}</finalName>
                             <appendAssemblyId>false</appendAssemblyId>
                             <descriptors>
                                 <descriptor>assembly.xml</descriptor>
