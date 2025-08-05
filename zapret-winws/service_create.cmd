@@ -11,7 +11,7 @@ set ARGS=^
 --filter-tcp=443 --hostlist=\"%~dp0files\list-resource.txt\" --dpi-desync=fake,multidisorder --dpi-desync-split-pos=midsld --dpi-desync-repeats=6 --dpi-desync-fooling=badseq --new ^
 --filter-udp=443 --hostlist=\"%~dp0files\list-youtube.txt\" --dpi-desync=fake --dpi-desync-repeats=11 --dpi-desync-fake-quic=\"%~dp0files\quic_initial_www_google_com.bin\" --new ^
 --filter-udp=443 --hostlist=\"%~dp0files\list-resource.txt\" --dpi-desync=fake --dpi-desync-repeats=11 --new ^
---filter-udp=50000-50099 --filter-l7=discord,stun --dpi-desync=fake
+--filter-udp=50000-50099 --filter-l7=discord,stun --dpi-desync=fake --dpi-desync-repeats=6
 call :srvinst winws1
 rem set ARGS=--wf-l3=ipv4,ipv6 --wf-udp=443 --dpi-desync=fake 
 rem call :srvinst winws2
